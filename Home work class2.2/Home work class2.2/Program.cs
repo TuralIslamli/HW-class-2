@@ -4,12 +4,12 @@ namespace Home_work_class2._2
 {
     class Account
     {
-        private int summ;
+        private decimal summ;
         private Guid accountNum;
         private DateTime data;
        
 
-        public int Summ
+        public decimal Summ
         {
             get { return summ; }
             set { summ = value; }
@@ -27,7 +27,7 @@ namespace Home_work_class2._2
             get { return data; }
             set { data = value; }
         }
-        public Account(int summ, Guid accountNum, DateTime data)
+        public Account(decimal summ, Guid accountNum, DateTime data)
         {
             Summ = summ;
             AccountNum = accountNum;
@@ -40,7 +40,7 @@ namespace Home_work_class2._2
         public void GetDispleyData()
         {
             
-            Console.WriteLine($"Дата открытия:{"D: " + data.ToString("D")}.");
+            Console.WriteLine($"Дата открытия:{data.ToString("D")}.");
         }
     }
     class IndividualAccount : Account
@@ -52,39 +52,81 @@ namespace Home_work_class2._2
             get { return accountType; }
             set { accountType = value; }
         }
-        public IndividualAccount(string accountType, int summ, Guid accountNum, DateTime data) : base(summ, accountNum, data)
+        public IndividualAccount(string accountType, decimal summ, Guid accountNum, DateTime data) : base(summ, accountNum, data)
         {
             AccountType = accountType;
         }
-
-        public int Percent(int years, double sum)
+        public decimal PercentPlusInd(DateTime data, decimal summ)
         {
-             
-            if (years==0)
+            int years = DateTime.Now.Year - data.Year;
+            for (int i = 0; i < years; i++)
             {
-                return 0;
+                summ += summ * 0.10M;
             }
-            else
+            Console.WriteLine($"За {years} год/года/лет, ваш баланс стал {summ} АЗН.");
+            return summ;
+        }
+        public decimal Cash(decimal summ)
+        {
+            decimal cash = 0;
+            bool temp = false;
+            while (temp==false)
             {
-                
-               return Percent(years--, sum * 0.08);
+                Console.WriteLine("Укажите сумму, которую хотите обналичить:");
+                cash = Convert.ToInt32(Console.ReadLine());
+                if (cash>summ)
+                {
+                    Console.WriteLine($"В балансе не достаточно средств. Ваш баланс {summ} АЗН.");
+                }
+                else
+                {
+                    summ -= cash;
+                    temp = true;
+                }
             }
+            Console.WriteLine($"Вы сняли {cash} АЗН, ostalos {summ} АЗН.");
+            return summ;
+        }
+        
+    }
+    class MMC : Account
+    {
+        public MMC(decimal summ, Guid accountNum, DateTime data) : base(summ, accountNum, data)
+        {
+
+        }
+        public decimal PercentPlusMmc(DateTime data, decimal summ)
+        {
+            int years = DateTime.Now.Year - data.Year;
+            for (int i = 0; i < years; i++)
+            {
+                summ += summ * 0.11M;
+            }
+            Console.WriteLine($"За {years} год/года/лет, ваш баланс стал {summ} АЗН.");
+            return summ;
         }
     }
-/*    class MMC : Account
-    {
 
-    }*/
     class Program
     {
         static void Main(string[] args)
         {
             DateTime data = new DateTime(2020, 10, 10);
-            int sum = 1000;
-            int years = DateTime.Now.Year - data.Year;
-            Account newAccount = new Account(sum, Guid.NewGuid(),data);
-            newAccount.GetDisplaySumm();
-            newAccount.GetDispleyData();
+            decimal sum = 1000;
+            IndividualAccount individual = new IndividualAccount("Физический счет",sum, Guid.NewGuid(), data);
+            individual.GetDisplaySumm();
+            individual.GetDispleyData();
+            sum = individual.PercentPlusInd(data, sum);
+            sum = individual.Cash(sum);
+            DateTime dataTwo= new DateTime(2015, 11, 12); 
+            decimal sumTwo = 5000;
+            MMC company = new MMC(sumTwo, Guid.NewGuid(), dataTwo);
+            sumTwo = company.PercentPlusMmc(dataTwo,sumTwo);
+
+
+
+            Console.ReadKey();
+
         }
     }
 }
