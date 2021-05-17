@@ -1,0 +1,16 @@
+C:\Users\User\OneDrive\Рабочий стол\base c#\HW class 2\Home work class2.2\Home work class2.2\bin\Debug\net5.0\Home work class2.2.exe
+C:\Users\User\OneDrive\Рабочий стол\base c#\HW class 2\Home work class2.2\Home work class2.2\bin\Debug\net5.0\Home work class2.2.deps.json
+C:\Users\User\OneDrive\Рабочий стол\base c#\HW class 2\Home work class2.2\Home work class2.2\bin\Debug\net5.0\Home work class2.2.runtimeconfig.json
+C:\Users\User\OneDrive\Рабочий стол\base c#\HW class 2\Home work class2.2\Home work class2.2\bin\Debug\net5.0\Home work class2.2.runtimeconfig.dev.json
+C:\Users\User\OneDrive\Рабочий стол\base c#\HW class 2\Home work class2.2\Home work class2.2\bin\Debug\net5.0\Home work class2.2.dll
+C:\Users\User\OneDrive\Рабочий стол\base c#\HW class 2\Home work class2.2\Home work class2.2\bin\Debug\net5.0\ref\Home work class2.2.dll
+C:\Users\User\OneDrive\Рабочий стол\base c#\HW class 2\Home work class2.2\Home work class2.2\bin\Debug\net5.0\Home work class2.2.pdb
+C:\Users\User\OneDrive\Рабочий стол\base c#\HW class 2\Home work class2.2\Home work class2.2\obj\Debug\net5.0\Home work class2.2.csprojAssemblyReference.cache
+C:\Users\User\OneDrive\Рабочий стол\base c#\HW class 2\Home work class2.2\Home work class2.2\obj\Debug\net5.0\Home work class2.2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\OneDrive\Рабочий стол\base c#\HW class 2\Home work class2.2\Home work class2.2\obj\Debug\net5.0\Home work class2.2.AssemblyInfoInputs.cache
+C:\Users\User\OneDrive\Рабочий стол\base c#\HW class 2\Home work class2.2\Home work class2.2\obj\Debug\net5.0\Home work class2.2.AssemblyInfo.cs
+C:\Users\User\OneDrive\Рабочий стол\base c#\HW class 2\Home work class2.2\Home work class2.2\obj\Debug\net5.0\Home work class2.2.csproj.CoreCompileInputs.cache
+C:\Users\User\OneDrive\Рабочий стол\base c#\HW class 2\Home work class2.2\Home work class2.2\obj\Debug\net5.0\Home work class2.2.dll
+C:\Users\User\OneDrive\Рабочий стол\base c#\HW class 2\Home work class2.2\Home work class2.2\obj\Debug\net5.0\ref\Home work class2.2.dll
+C:\Users\User\OneDrive\Рабочий стол\base c#\HW class 2\Home work class2.2\Home work class2.2\obj\Debug\net5.0\Home work class2.2.pdb
+C:\Users\User\OneDrive\Рабочий стол\base c#\HW class 2\Home work class2.2\Home work class2.2\obj\Debug\net5.0\Home work class2.2.genruntimeconfig.cache
